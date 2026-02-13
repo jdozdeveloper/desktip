@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de proyectos de Eimy Agencia. Diseño web, branding y más.">
+    <title>Portafolio | Eimy Agencia</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header / Navegación -->
+    <header class="header header-on-dark" id="header">
+        <div class="container header__container">
+            <a href="index.html" class="logo">
+                <span class="logo__text">EIMY.</span>
+            </a>
+
+            <nav class="nav" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item"><a href="services.html" class="nav__link">Servicios</a></li>
+                    <li class="nav__item"><a href="portfolio.html" class="nav__link active-link">Portafolio</a></li>
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contacto</a></li>
+                </ul>
+
+                <button class="nav__close" id="nav-close" aria-label="Cerrar menú">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </nav>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container page-header__container">
+                <span class="page-header__subtitle">Nuestro Trabajo</span>
+                <h1 class="page-header__title">Resultados que hablan por sí mismos.</h1>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery -->
+        <section class="section portfolio">
+            <div class="container">
+                <!-- Filters (Visual only for now, could be functional with JS) -->
+                <div class="portfolio__filters text-center">
+                    <button class="portfolio__filter active-filter">Todos</button>
+                    <button class="portfolio__filter">Web</button>
+                    <button class="portfolio__filter">Branding</button>
+                    <button class="portfolio__filter">Marketing</button>
+                </div>
+
+                <div class="portfolio__grid">
+                    <!-- Project 1 -->
+                    <article class="portfolio__card hidden-stagger">
+                        <div class="portfolio__img-wrapper">
+                            <!-- Placeholder image using CSS gradient -->
+                            <div class="portfolio__img" style="background: linear-gradient(45deg, #1e40af, #60a5fa);"></div>
+                        </div>
+                        <div class="portfolio__content">
+                            <span class="portfolio__category">Web Design</span>
+                            <h3 class="portfolio__title">TechStart Dashboard</h3>
+                            <a href="#" class="portfolio__link">Ver Proyecto <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="portfolio__card hidden-stagger">
+                        <div class="portfolio__img-wrapper">
+                             <div class="portfolio__img" style="background: linear-gradient(45deg, #10b981, #34d399);"></div>
+                        </div>
+                        <div class="portfolio__content">
+                            <span class="portfolio__category">Branding</span>
+                            <h3 class="portfolio__title">GreenLife Organics</h3>
+                            <a href="#" class="portfolio__link">Ver Proyecto <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="portfolio__card hidden-stagger">
+                         <div class="portfolio__img" style="background: linear-gradient(45deg, #f59e0b, #fbbf24);"></div>
+                        <div class="portfolio__content">
+                            <span class="portfolio__category">Marketing</span>
+                            <h3 class="portfolio__title">Luxe Fashion Campaign</h3>
+                            <a href="#" class="portfolio__link">Ver Proyecto <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+                    
+                     <!-- Project 4 -->
+                    <article class="portfolio__card hidden-stagger">
+                         <div class="portfolio__img" style="background: linear-gradient(45deg, #6366f1, #818cf8);"></div>
+                        <div class="portfolio__content">
+                            <span class="portfolio__category">App Dev</span>
+                            <h3 class="portfolio__title">FinTrack Mobile App</h3>
+                            <a href="#" class="portfolio__link">Ver Proyecto <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+         <!-- CTA -->
+        <section class="section cta">
+            <div class="container cta__container text-center hidden-fade-up">
+                <h2 class="cta__title">¿Te gusta lo que ves?</h2>
+                <a href="contact.html" class="btn btn--white">Inicia tu proyecto</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__content">
+                <a href="index.html" class="footer__logo">
+                    <span class="logo__text logo__text--footer">EIMY.</span>
+                </a>
+                <p class="footer__description">Agencia creativa que redefine los límites digitales.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    <a href="#" class="footer__social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="#" class="footer__social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <h3 class="footer__title">Compañía</h3>
+                <ul class="footer__links-list">
+                    <li><a href="index.html" class="footer__link">Inicio</a></li>
+                    <li><a href="about.html" class="footer__link">Nosotros</a></li>
+                    <li><a href="services.html" class="footer__link">Servicios</a></li>
+                    <li><a href="portfolio.html" class="footer__link">Portafolio</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__links">
+                <h3 class="footer__title">Soporte</h3>
+                <ul class="footer__links-list">
+                    <li><a href="#" class="footer__link">FAQ</a></li>
+                    <li><a href="contact.html" class="footer__link">Contacto</a></li>
+                    <li><a href="#" class="footer__link">Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__copy">© 2025 Eimy. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

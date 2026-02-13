@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Synaptech Solutions - Conectando ideas, creando futuro. Soluciones tecnológicas innovadoras y desarrollo de software.">
+    <title>Synaptech Solutions | Desarrollo de Software</title>
+    
+    <!-- Google Fonts: Manrope & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header / Navegación -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#home" class="logo">
+                <span class="logo__text">Synaptech.</span>
+            </a>
+
+            <nav class="nav" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Inicio</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">Nosotros</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Servicios</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portafolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contacto</a></li>
+                </ul>
+
+                <button class="nav__close" id="nav-close" aria-label="Cerrar menú">
+                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </nav>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero__bg"></div>
+            <div class="container hero__container">
+                <div class="hero__content hidden-fade-up">
+                    <span class="hero__subtitle">Conectando ideas, creando futuro</span>
+                    <h1 class="hero__title">Soluciones tecnológicas <br>que impulsan tu <span class="highlight">éxito</span></h1>
+                    <p class="hero__description">Desarroyamos software moderno y seguro para optimizar tus procesos y mejorar la experiencia de tus usuarios.</p>
+                    <a href="#about" class="btn btn--primary">Conoce más</a>
+                </div>
+                
+                <div class="hero__visual hidden-fade-left">
+                    <svg class="hero__svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:var(--primary);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:var(--secondary);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="250" cy="250" r="200" fill="url(#grad1)" opacity="0.1" class="pulse-anim" />
+                        <circle cx="250" cy="250" r="150" fill="none" stroke="url(#grad1)" stroke-width="2" class="rotate-anim" />
+                        <circle cx="350" cy="150" r="20" fill="var(--secondary)" class="float-anim-1" />
+                        <circle cx="150" cy="350" r="30" fill="var(--primary)" class="float-anim-2" />
+                    </svg>
+                </div>
+                
+                <a href="#about" class="scroll-down">
+                    <span>Scroll</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container">
+                <div class="section__header text-center hidden-fade-up">
+                    <span class="section__subtitle">Quiénes Somos</span>
+                    <h2 class="section__title">Innovación y Calidad</h2>
+                </div>
+
+                <div class="about__container">
+                    <div class="about__data hidden-fade-right">
+                        <h3 class="about__title-small">Synaptech Solutions</h3>
+                        <p class="about__description">Somos expertos en desarrollar soluciones tecnológicas innovadoras y eficientes. Nuestro enfoque está en optimizar procesos empresariales e impulsar la transformación digital mediante software de alta calidad.</p>
+                        
+                        <h3 class="about__title-small" style="font-size: 1.25rem; margin-top: 2rem; margin-bottom: 1rem;">Nuestros Valores</h3>
+                        <ul style="list-style: none; display: grid; gap: 0.5rem;">
+                            <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Innovación constante</li>
+                            <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Compromiso con la calidad</li>
+                            <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Ética profesional</li>
+                            <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Trabajo en equipo</li>
+                            <li style="display: flex; align-items: center; gap: 0.5rem;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Orientación al cliente</li>
+                        </ul>
+                    </div>
+
+                    <div class="about__blocks">
+                        <div class="about__card hidden-stagger">
+                            <div class="about__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+                            </div>
+                            <h3 class="about__card-title">Visión</h3>
+                            <p class="about__card-description">Ser una empresa líder en desarrollo de software en Latinoamérica, reconocida por la calidad de nuestros productos, la innovación constante y el compromiso con el crecimiento tecnológico de nuestros clientes.</p>
+                        </div>
+
+                        <div class="about__card hidden-stagger">
+                            <div class="about__icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            </div>
+                            <h3 class="about__card-title">Misión</h3>
+                            <p class="about__card-description">Desarrollar soluciones tecnológicas innovadoras y eficientes que optimicen procesos empresariales, impulsen la transformación digital y mejoren la experiencia de los usuarios mediante software moderno y seguro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+             <!-- Process Subsection -->
+            <div class="container section"> <!-- Added section class for spacing -->
+                <div class="section__header text-center hidden-fade-up">
+                    <span class="section__subtitle">Cómo Trabajamos</span>
+                    <h2 class="section__title">Nuestro Proceso Creativo</h2>
+                </div>
+
+                <div class="process__steps">
+                    <div class="process__step hidden-stagger">
+                        <span class="process__number">01</span>
+                        <h3 class="process__title">Descubrimiento</h3>
+                        <p class="process__desc">Analizamos tu marca, mercado y objetivos. Escuchamos para entender.</p>
+                    </div>
+                    <div class="process__step hidden-stagger">
+                        <span class="process__number">02</span>
+                        <h3 class="process__title">Estrategia</h3>
+                        <p class="process__desc">Definimos el camino. Trazamos un plan de acción sólido y medible.</p>
+                    </div>
+                    <div class="process__step hidden-stagger">
+                        <span class="process__number">03</span>
+                        <h3 class="process__title">Diseño</h3>
+                        <p class="process__desc">Damos vida a las ideas. Creamos visuales impactantes y funcionales.</p>
+                    </div>
+                    <div class="process__step hidden-stagger">
+                        <span class="process__number">04</span>
+                        <h3 class="process__title">Lanzamiento</h3>
+                        <p class="process__desc">Implementamos y optimizamos. Acompañamos tu éxito post-lanzamiento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section__header text-center hidden-fade-up">
+                    <span class="section__subtitle">Qué Hacemos</span>
+                    <h2 class="section__title">Soluciones digitales integrales</h2>
+                </div>
+
+                <div class="services__grid">
+                    <!-- Servicio 1 -->
+                    <article class="service__card hidden-stagger">
+                        <div class="service__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        </div>
+                        <h3 class="service__title">Desarrollo Web</h3>
+                        <p class="service__description">Sitios web modernos, rápidos y responsivos. Creamos plataformas que potencian tu presencia digital y convierten visitantes en clientes.</p>
+                    </article>
+
+                    <!-- Servicio 2 -->
+                    <article class="service__card hidden-stagger">
+                        <div class="service__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                        </div>
+                        <h3 class="service__title">Aplicaciones Móviles</h3>
+                        <p class="service__description">Desarrollo de apps nativas e híbridas para iOS y Android, diseñadas para ofrecer la mejor experiencia de usuario en cualquier dispositivo.</p>
+                    </article>
+
+                    <!-- Servicio 3 -->
+                    <article class="service__card hidden-stagger">
+                        <div class="service__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        </div>
+                        <h3 class="service__title">Automatización</h3>
+                        <p class="service__description">Optimizamos tus flujos de trabajo mediante la automatización de procesos empresariales, reduciendo costos y aumentando la eficiencia.</p>
+                    </article>
+
+                    <!-- Servicio 4 -->
+                    <article class="service__card hidden-stagger">
+                        <div class="service__icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                        </div>
+                        <h3 class="service__title">Soporte Técnico</h3>
+                        <p class="service__description">Acompañamiento continuo y soporte especializado para garantizar que tus sistemas funcionen correctamente en todo momento.</p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- FAQ Subsection -->
+            <div class="container section">
+                <div class="section__header text-center hidden-fade-up">
+                    <span class="section__subtitle">Dudas Comunes</span>
+                    <h2 class="section__title">Preguntas Frecuentes</h2>
+                </div>
+                
+                <div class="faq__grid hidden-fade-up">
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Cuánto tiempo toma desarrollar una página web?</summary>
+                        <div class="faq__answer">
+                            <p>El tiempo varía según la complejidad del proyecto. Una landing page puede estar lista en 1-2 semanas, mientras que un sitio corporativo completo puede tomar de 4 a 6 semanas.</p>
+                        </div>
+                    </details>
+                     <details class="faq__item">
+                        <summary class="faq__question">¿Ofrecen servicios de mantenimiento?</summary>
+                        <div class="faq__answer">
+                            <p>Sí, ofrecemos planes de mantenimiento mensual que incluyen actualizaciones de seguridad, copias de seguridad y pequeños cambios de contenido.</p>
+                        </div>
+                    </details>
+                     <details class="faq__item">
+                        <summary class="faq__question">¿Cómo es el proceso de pago?</summary>
+                        <div class="faq__answer">
+                            <p>Generalmente solicitamos un 50% de anticipo al inicio del proyecto y el 50% restante contra entrega y aprobación final.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="section portfolio" id="portfolio">
+            <div class="container">
+                <div class="section__header text-center hidden-fade-up">
+                    <span class="section__subtitle">Nuestro Trabajo</span>
+                    <h2 class="section__title">Resultados que hablan</h2>
+                </div>
+
+                <!-- Filters -->
+                <div class="portfolio__filters text-center hidden-fade-up">
+                    <button class="portfolio__filter active-filter">Todos</button>
+                    <button class="portfolio__filter">Web</button>
+                    <button class="portfolio__filter">Branding</button>
+                    <button class="portfolio__filter">Marketing</button>
+                </div>
+
+                <div class="portfolio__grid">
+                    <!-- Project 1 -->
+                    <article class="portfolio__card hidden-stagger">
+                        <div class="portfolio__img-wrapper">
+                            <div class="portfolio__img" style="background: linear-gradient(45deg, #1e40af, #60a5fa);"></div>
+                        </div>
+                        <div class="portfolio__content">
+                            <span class="portfolio__category">Web Design</span>
+                            <h3 class="portfolio__title">TechStart Dashboard</h3>
+                            <a href="#" class="portfolio__link">Ver Proyecto <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="portfolio__card hidden-stagger">
+                        <div class="portfolio__img-wrapper">
+                             <div class="portfolio__img" style="background: linear-gradient(45deg, #10b981, #34d399);"></div>
+                        </div>
+                        <div class="portfolio__content">
+                            <span class="portfolio__category">Branding</span>
+                            <h3 class="portfolio__title">GreenLife Organics</h3>
+                            <a href="#" class="portfolio__link">Ver Proyecto <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="portfolio__card hidden-stagger">
+                         <div class="portfolio__img" style="background: linear-gradient(45deg, #f59e0b, #fbbf24);"></div>
+                        <div class="portfolio__content">
+                            <span class="portfolio__category">Marketing</span>
+                            <h3 class="portfolio__title">Luxe Fashion Campaign</h3>
+                            <a href="#" class="portfolio__link">Ver Proyecto <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+                    
+                     <!-- Project 4 -->
+                    <article class="portfolio__card hidden-stagger">
+                         <div class="portfolio__img" style="background: linear-gradient(45deg, #6366f1, #818cf8);"></div>
+                        <div class="portfolio__content">
+                            <span class="portfolio__category">App Dev</span>
+                            <h3 class="portfolio__title">FinTrack Mobile App</h3>
+                            <a href="#" class="portfolio__link">Ver Proyecto <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section testimonials">
+            <div class="container">
+                <div class="section__header text-center hidden-fade-up">
+                    <span class="section__subtitle">Testimonios</span>
+                    <h2 class="section__title">Lo que dicen nuestros clientes</h2>
+                </div>
+                
+                <div class="testimonials__grid">
+                    <article class="testimonial__card hidden-stagger">
+                        <p class="testimonial__text">"Eimy transformó completamente nuestra presencia digital. El diseño es impecable y la funcionalidad supera nuestras expectativas."</p>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar">MA</div>
+                            <div>
+                                <h4 class="testimonial__name">María Álvarez</h4>
+                                <span class="testimonial__role">CEO, TechStart</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial__card hidden-stagger">
+                        <p class="testimonial__text">"Profesionalismo puro. Entendieron nuestra visión desde el primer día y la llevaron a otro nivel. Altamente recomendados."</p>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar">JR</div>
+                            <div>
+                                <h4 class="testimonial__name">Javier Ruiz</h4>
+                                <span class="testimonial__role">Director de Marketing, GreenLife</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                     <article class="testimonial__card hidden-stagger">
+                        <p class="testimonial__text">"La atención al detalle y la creatividad que aportaron a nuestro proyecto de rebranding fue excepcional."</p>
+                        <div class="testimonial__author">
+                            <div class="testimonial__avatar">LC</div>
+                            <div>
+                                <h4 class="testimonial__name">Sofia Gomez</h4>
+                                <span class="testimonial__role">Fundadora, StyleStudio</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="contact__bg"></div>
+            <div class="container">
+                <div class="section__header text-center hidden-fade-up">
+                    <span class="section__subtitle">Empecemos</span>
+                    <h2 class="section__title">Hablemos de tu próximo proyecto</h2>
+                </div>
+
+                <div class="contact__container">
+                    <div class="contact__content hidden-fade-right">
+                        <p class="contact__description">Estamos aquí para escuchar tus necesidades y ofrecerte las mejores soluciones. Rellena el formulario o contáctanos directamente.</p>
+                        
+                        <div class="contact__info">
+                            <div class="contact__info-data">
+                                <span class="contact__info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                </span>
+                                <div>
+                                    <h3 class="contact__info-title">Email</h3>
+                                    <span class="contact__info-subtitle">info@synaptech.com</span>
+                                </div>
+                            </div>
+
+                            <div class="contact__info-data">
+                                <span class="contact__info-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </span>
+                                <div>
+                                    <h3 class="contact__info-title">Teléfono</h3>
+                                    <span class="contact__info-subtitle">+1 234 567 8900</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact__social">
+                            <a href="#" class="contact__social-link" aria-label="Instagram">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </a>
+                            <a href="#" class="contact__social-link" aria-label="LinkedIn">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form hidden-fade-left" id="contact-form">
+                        <div class="contact__inputs">
+                            <div class="contact__content-input">
+                                <label for="name" class="contact__label">Nombre</label>
+                                <input type="text" id="name" class="contact__input" required placeholder="Tu nombre">
+                            </div>
+                            <div class="contact__content-input">
+                                <label for="email" class="contact__label">Email</label>
+                                <input type="email" id="email" class="contact__input" required placeholder="tucorreo@ejemplo.com">
+                            </div>
+                            <div class="contact__content-input">
+                                <label for="phone" class="contact__label">Teléfono (opcional)</label>
+                                <input type="tel" id="phone" class="contact__input" placeholder="+123456789">
+                            </div>
+                            <div class="contact__content-input">
+                                <label for="message" class="contact__label">Mensaje</label>
+                                <textarea id="message" cols="0" rows="5" class="contact__input" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary contact__btn">
+                            <span class="btn__text">Enviar Mensaje</span>
+                            <span class="btn__loading" style="display: none;">
+                                <svg class="spinner" viewBox="0 0 50 50"><circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle></svg>
+                            </span>
+                            <span class="btn__success" style="display: none;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Enviado
+                            </span>
+                        </button>
+                        <p class="contact__message" id="contact-message"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__content">
+                <a href="#home" class="footer__logo">
+                    <span class="logo__text logo__text--footer">Synaptech.</span>
+                </a>
+                <p class="footer__description">Conectando ideas, creando futuro.</p>
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    <a href="#" class="footer__social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="#" class="footer__social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                </div>
+            </div>
+
+            <div class="footer__links">
+                <h3 class="footer__title">Compañía</h3>
+                <ul class="footer__links-list">
+                    <li><a href="#home" class="footer__link">Inicio</a></li>
+                    <li><a href="#about" class="footer__link">Nosotros</a></li>
+                    <li><a href="#services" class="footer__link">Servicios</a></li>
+                    <li><a href="#portfolio" class="footer__link">Portafolio</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__links">
+                <h3 class="footer__title">Soporte</h3>
+                <ul class="footer__links-list">
+                    <li><a href="#" class="footer__link">FAQ</a></li>
+                    <li><a href="#contact" class="footer__link">Contacto</a></li>
+                    <li><a href="#" class="footer__link">Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__copy">© 2026 Synaptech Solutions. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
